@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png">
+	<title>PROJECT TRACKKING</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;700&family=Fraunces:wght@700&family=Inter:wght@300;500;600&family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400&family=Plus+Jakarta+Sans:ital,wght@0,600;0,700;1,200&family=Poppins:wght@100;200;500;600;700&family=Questrial&family=Rubik:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="overflow: hidden;">
+	<div class="background-card"></div>
+	<div class="content">
+		<nav>
+			<ul>
+				<li style="margin-inline-start:85px;"><a href="#"><img src="images/logo.svg" alt="logo"></a></li>
+				<li style="margin-left: 900px;"><a href="#">PRODUCT</a></li>
+				<li><a href ="#">FEATURES</a></li>
+				<li><a href ="#">PRICING</a></li>
+				<li><a href="#"><span class="dot">.</span></a></li>
+				<li ><a href = "#" style="color: hsl(231, 7%, 65%);">LOGIN</a></li>
+			</ul>
+		</nav>
+
+		<span class="mobile-lg">
+				<img src="images/logo.svg" alt="logo">
+		</span>
+		<div id="mySidePanel" class="sidepanel">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+			<a href="#">PRODUCT</a>
+			<a href="#">FEATURES</a>
+			<a href="#">PRICING</a>
+			<a href="#">LOG IN</a>
+		</div>
+
+		<button class="openbtn" onclick="openNav()">☰</button>
+
+		<main style=" margin-top: 100px;">
+			<div class="mobile-img">
+				<img src="images/illustration-devices.svg" alt="insights">
+			</div>
+			<section class="intro">
+				<p><span id="new">NEW</span> <span id="md">MONOGRAPH DASHBOARD</span></p>
+				<h1 id="h-text">POWERFUL INSIGHTS<br> INTO YOUR TEAM</h1>
+				<p id="p-text">Project planning and time tracking <br>for agile teams</p>
+				<button id="demo-btn">SCHEDULE A DEMO</button> <span id="pre">TO SEE A PREVIEW</span>
+			</section>
+			<div>
+				<img src="images/illustration-devices.svg" class="i-class" alt="insights">
+			</div>
+
+		</main>
+	</div>
+
+	<script>
+		function openNav() {
+			document.getElementById("mySidePanel").style.width = "250px";
+		}
+
+		function closeNav(){
+			document.getElementById("mySidePanel").style.width = "0"
+		}
+	</script>
+</body>
+</html>
